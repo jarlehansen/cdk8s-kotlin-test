@@ -21,7 +21,9 @@ class Main(scope: Construct, id: String) : Chart(scope, id) {
                 spec(add<DeploymentSpec.Builder> {
                     selector(add<LabelSelector.Builder> {}())
                     replicas(1)
-                    template(add<PodTemplateSpec.Builder> {}())
+                    template(add<PodTemplateSpec.Builder> {
+                        paused(true)
+                    }())
                 }())
             }()
         )
