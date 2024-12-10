@@ -2,15 +2,9 @@ package org.example
 
 import org.cdk8s.App
 import org.cdk8s.Chart
-import org.cdk8s.plus28.k8s.DeploymentSpec
-import org.cdk8s.plus28.k8s.KubeDeployment
-import org.cdk8s.plus28.k8s.KubeDeploymentProps
-import org.cdk8s.plus28.k8s.LabelSelector
-import org.cdk8s.plus28.k8s.ObjectMeta
-import org.cdk8s.plus28.k8s.PodTemplateSpec
+import org.cdk8s.plus28.k8s.*
 import software.amazon.jsii.Builder
 import software.constructs.Construct
-import kotlin.jvm.java
 
 operator fun <T> Builder<T>.invoke(): T = this.build() as T
 
